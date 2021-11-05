@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    font-family:'Raleway';  
+}
+
+main{
+    flex: 1;
+}
+
+/* Header */
+header{
+    background-color : rgba(0, 0, 0, 0.97);
+    padding: 0.7rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+ .headerTopRow{
+    display: flex; 
+    justify-content: space-around;
+    position: relative;
+    bottom: 1rem;
+    background: black;
+    padding: 1rem ;
+    border-bottom: 1px solid #ff7101;
+}
+
+.headerTopLink{
+  color: #dfe6e9;  
+}
+
+
+.containerHeader{    
+    width: 80%;
+    max-width: 1320px;
+    margin: 0 auto; 
+}
+
+/* Logo */
+
+.logo:hover{
+    opacity: 0.60;
+}
+
+/* Nav */
+.navStyle{
+    display: flex;
+}
+
+.rowHeader{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.navList{
+    display: flex;
+    padding: 0 0 0 3rem;
+}
+
+.navItem{
+    margin: 0 0 0 1rem;
+    padding: 0 0 0 2rem;
+}
+
+.navLink{
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.navLink:hover{
+    color: rgb(233, 199, 10);
+}
+
+/* Sección 1 - imagen principal */
+
+.containerSection{    
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/img/foto1.jpg);
+    height:600px;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.imgTitle{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 8rem;
+    margin-left: 16rem;
+    
+}
+
+/* Titulos en imagen principal */
+
+.title{
+    text-align: end;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    position: relative;
+    bottom: 3.5rem;
+    z-index: 0;
+    margin: 0 4rem 0 0;
+    
+}
+
+.titleTwo{
+   text-align: end;
+   color: white;
+   text-transform: uppercase;
+   font-size: 40px;
+   position: relative; 
+   bottom: 4rem;
+   z-index: 0;
+   margin: 0 2rem 0 0;
+ 
+}
+
+/* IMG - SVG - Triangulo */
+
+.triangle{
+    height:210px ;
+    width: 1349px;
+    position: relative;
+    bottom: 2.13rem;
+    
+}
+
+svg, img{
+    vertical-align: middle;   
+}
+
+/* GRID */
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 200px 200px 500px;
+    justify-content:space-around;
+    
+}
+
+.articleGrid{
+    border: 1px solid yellow;
+    margin: 10px;
+    padding: 30px 30px;
+}
+
+.contentGrid .articleGrid {
+    background: #808e9b;
+    padding: 20px auto;
+    margin: 5px 0;
+    color: #dfe6e9
+    
+}
+
+/* Sección 2 - Productos */
+
+.productosSection{    
+    background-image:linear-gradient(rgba(0,0,0,0.5),
+                     rgba(0,0,0,0.5)), url(/img/foto2.jpg);
+    height:1200px;
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: flex;
+    
+}
+
+.productosTitle{
+   color: white;
+   text-transform: uppercase;
+   font-size: 40px;
+   margin: 2rem 0 0 4rem;
+}
+
+.productosTitleTwo{
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0 0 0 4rem;
+ }
+
+.productosRow{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.triangleTwo{
+  position: absolute;
+  left: 0;
+}
+
+/* Frase */
+
+.fraseSection{
+    background-image:linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url(/img/foto3.jpg);
+    height:400px;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment:fixed;
+    display: flex;
+    justify-content: center; 
+}
+
+.fraseCol{
+   display: flex;
+   align-items: center;
+}
+
+.frase{
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+}
+
+ /* Footer */
+
+ .footerStyle{
+    padding:3rem 4rem;
+    background-color: black;
+}
+
+.containerFooter{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.footerSm{
+    color: rgb(233, 199, 10);
+}
+
+.rowFooter{
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    padding: 1rem 0;
+    
+}
+
+.rowFooter a{
+    color: #333333;
+    text-transform: uppercase;
+    
+}
+
+.rowFooter a i{
+    font-size: 1rem;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+.parrafoFooter{
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.rowFooter a:hover{
+    
+    opacity: 0.5;
+}
+
+.bottomFooter{
+    padding: 1rem 0;
+}
+
+.rowCopy{
+    text-align: center;
+    color: #212121;
+}
+
+.rowCopy a{
+    color: rgb(233, 199, 10);
+}
+
+.rowCopy a:hover{
+    opacity: 0.5;
+}
+
+
+
+
+
+ 
+
+
+
+
